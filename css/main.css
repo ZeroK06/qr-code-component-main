@@ -1,0 +1,45 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: 31, 50, 81;
+  --borderRadius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: var(--Light-gray);
+  padding: 0 1rem;
+}
+.container__qr {
+  width: calc(375px - 2.5rem);
+  padding: 1rem;
+  background: var(--White);
+  border-radius: calc(var(--borderRadius) + 10px);
+  box-shadow: 0 10px 50px 20px rgba(var(--Dark-blue), 0.1);
+}
+.qr__img {
+  width: min(100%);
+  border-radius: var(--borderRadius);
+}
+.qr__text {
+  padding: 1rem 0.8rem;
+  text-align: center;
+}
+.text__title {
+  margin-bottom: 1rem;
+}
+.text__paragraph {
+  color: var(--Grayish-blue);
+  margin-bottom: 0.3rem;
+}
